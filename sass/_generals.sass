@@ -1,6 +1,6 @@
 header
     position: relative
-    height: 50px
+    height: 50px    
 
 nav
 	position: fixed
@@ -8,6 +8,9 @@ nav
 	height: 50px
 	background-color: #212121
 	z-index: 5
+
+.hamburger
+    display: none
 
 .menu                                
 	display: flex
@@ -64,7 +67,7 @@ nav
             text-align: right
             line-height: 12px
             &:hover
-            color: $main-color
+                color: $main-color
         &_btn
             width: 172px
             height: 46px
@@ -79,9 +82,9 @@ nav
             margin-top: 16px
             border-radius: 4px
             +btn_hover
-          
         
-
+.xs-visible
+    display: none
 .promo
   min-height: 600px
   background: url('../img/uber_bg.png') center (center / cover) no-repeat
